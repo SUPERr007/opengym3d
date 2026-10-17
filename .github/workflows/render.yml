@@ -35,12 +35,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      if: ${{ secrets.MOCAP_TOKEN != '' }}
-
       # Mixamo motions (exported Without Skin) live in a private repo: Adobe's
       # Mixamo terms allow them inside a project but not as redistributed
       # files, so the public repo only carries the references.
       - uses: actions/checkout@v4
+      if: ${{ secrets.MOCAP_TOKEN != '' }}
         with:
           repository: AssiamahS/opengym3d-mocap
           token: ${{ secrets.MOCAP_TOKEN }}
