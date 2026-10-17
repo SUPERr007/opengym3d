@@ -751,7 +751,58 @@
     "jog"
    ],
    "candidate_for": [],
-   "verified_exercise": {
+   "verified_exercise": ,
+    {
+      "id": "motion/video/squat-front",
+      "type": "motion",
+      "name": "Air squat, own capture (front view)",
+      "source": "pipeline/video_mocap.py over own phone capture, front view; MediaPipe Pose 0.10.21 on-device",
+      "license": "CC0-1.0",
+      "license_note": "own capture, user-supplied",
+      "commercial_use": true,
+      "format": "opengym3d-motion/1",
+      "file": "video/squat_front.json",
+      "rig": "driver-directions",
+      "compatible_rigs": "makehuman-default (via animate_video)",
+      "tags": "squat air_squat bodyweight quads glutes front",
+      "quality": 6,
+      "candidate_for": "squat",
+      "verified_exercise": "my_squat (skeleton-first verify 2026-10-17)"
+    },
+    {
+      "id": "motion/video/squat-back",
+      "type": "motion",
+      "name": "Air squat, own capture (back view)",
+      "source": "pipeline/video_mocap.py over own phone capture, back view; MediaPipe Pose 0.10.21 on-device",
+      "license": "CC0-1.0",
+      "license_note": "own capture, user-supplied",
+      "commercial_use": true,
+      "format": "opengym3d-motion/1",
+      "file": "video/squat_back.json",
+      "rig": "driver-directions",
+      "compatible_rigs": "makehuman-default (via animate_video)",
+      "tags": "squat air_squat bodyweight quads glutes back",
+      "quality": 6,
+      "candidate_for": "squat",
+      "verified_exercise": "my_squat (skeleton-first verify 2026-10-17)"
+    },
+    {
+      "id": "motion/video/squat-side",
+      "type": "motion",
+      "name": "Air squat, own capture (side view)",
+      "source": "pipeline/video_mocap.py over own phone capture, side view; MediaPipe Pose 0.10.21 on-device",
+      "license": "CC0-1.0",
+      "license_note": "own capture, user-supplied",
+      "commercial_use": true,
+      "format": "opengym3d-motion/1",
+      "file": "video/squat_side.json",
+      "rig": "driver-directions",
+      "compatible_rigs": "makehuman-default (via animate_video)",
+      "tags": "squat air_squat bodyweight quads glutes side",
+      "quality": 6,
+      "candidate_for": "squat",
+      "verified_exercise": "my_squat (skeleton-first verify 2026-10-17)"
+    }{
     "deadlift": "REJECTED: the bend is a bendy squat, torso 36 deg, hips to 0.45 m"
    },
    "quality": 7
